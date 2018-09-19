@@ -19,7 +19,7 @@ int main(){
   int ray[10];
   i = 9;
   while(i >= 0){
-    *(ray+i) = *(ary +i);
+    *(ray +(9-i)) = *(ary +i);
     printf("ray[%d] = %d\n",i,ray[i]);
     i--;
   }
